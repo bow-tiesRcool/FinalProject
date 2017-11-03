@@ -12,7 +12,7 @@ public class TriggerController : MonoBehaviour {
         anim = animObject.GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         Debug.Log(other.tag);
         if (other.CompareTag("Player"))
