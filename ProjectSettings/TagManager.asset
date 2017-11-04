@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Trigger
+  - Door
   layers:
   - Default
   - TransparentFX
