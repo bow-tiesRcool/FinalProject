@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Trigger
   - Door
+  - HallwaySpawn
   layers:
   - Default
   - TransparentFX

@@ -411,9 +411,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4778633589306486}
+  - component: {fileID: 114758117294803572}
   m_Layer: 0
   m_Name: SpawnHere
-  m_TagString: Untagged
+  m_TagString: HallwaySpawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3847,7 +3848,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1483401430182508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.002122, y: 8.382455, z: -2.2307167}
+  m_LocalPosition: {x: 50.194138, y: 28.68277, z: 0.5948849}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4963391045028034}
@@ -9119,6 +9120,25 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0.2
   m_ShadowAngle: 0
+--- !u!114 &114758117294803572
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1201485413582992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191c2ed92d03f58479a3988d1971962f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTag: HallwaySpawn
+  levels:
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
 --- !u!114 &114783093596993710
 MonoBehaviour:
   m_ObjectHideFlags: 1
