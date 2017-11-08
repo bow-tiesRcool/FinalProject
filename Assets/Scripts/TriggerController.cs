@@ -18,6 +18,7 @@ public class TriggerController : MonoBehaviour {
         if (other.CompareTag("Player"))
         {
             anim.SetTrigger("Triggered");
+            gameObject.SetActive(false);
         }
     }
 }
