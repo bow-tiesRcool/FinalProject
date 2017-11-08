@@ -29,10 +29,10 @@ public class RoomSpawner : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-        Vector3 spawnPositon = transform.position;
+        Transform spawnTransform = transform;
 
         UnityEngine.Random.InitState(DateTime.Now.Millisecond);
-        foreach (LevelController level in levels)
+		foreach(LevelController level in levels)
         {
             
             int rand = (int)(UnityEngine.Random.value * 3);
@@ -43,7 +43,8 @@ public class RoomSpawner : MonoBehaviour {
 
             if(num == 0)
             {
-                GameObject room = Instantiate(level.room1, spawnPositon, Quaternion.identity);
+
+                GameObject room = Instantiate(level.room1, spawnTransform.position, spawnTransform.rotation);
                 Transform spawn = null;
                 Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
                 foreach (Transform t in spawnCandidates)
@@ -56,13 +57,14 @@ public class RoomSpawner : MonoBehaviour {
                 }
                 if (spawn != null)
                 {
-                    spawnPositon = spawn.position;
+                    spawnTransform = spawn;
                 }
 
             }
             else if(num == 1)
             {
-                GameObject room = Instantiate(level.room2, spawnPositon, Quaternion.identity);
+
+                GameObject room = Instantiate(level.room2, spawnTransform.position, spawnTransform.rotation);
                 Transform spawn = null;
                 Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
                 foreach (Transform t in spawnCandidates)
@@ -75,13 +77,13 @@ public class RoomSpawner : MonoBehaviour {
                 }
                 if (spawn != null)
                 {
-                    spawnPositon = spawn.position;
+                    spawnTransform = spawn;
                 }
             }
             else if(num == 2)
             {
-                Debug.Log(3);
-                GameObject room = Instantiate(level.room3, spawnPositon, Quaternion.identity);
+                
+                GameObject room = Instantiate(level.room3, spawnTransform.position, spawnTransform.rotation);
                 Transform spawn = null;
                 Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
                 foreach (Transform t in spawnCandidates)
@@ -94,7 +96,7 @@ public class RoomSpawner : MonoBehaviour {
                 }
                 if (spawn != null)
                 {
-                    spawnPositon = spawn.position;
+                    spawnTransform = spawn;
                 }
 
             }
