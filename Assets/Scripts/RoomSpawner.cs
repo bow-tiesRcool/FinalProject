@@ -20,14 +20,16 @@ public class LevelController
 
 public class RoomSpawner : MonoBehaviour {
 
-    public LevelController[] levels;
+    //put whatever your tagging you spawnpoints here exactly as you have it in the tags
+    [Tooltip("Put whatever your tagging your spawnpoints here exactly as you have it in the tags")]
+    public string spawnTag;
 
-    public float roomLength;
+    public LevelController[] levels;
 
 	// Use this for initialization
 	void Start () {
 
-        Vector3 positon = transform.position;
+        Vector3 spawnPositon = transform.position;
 
         UnityEngine.Random.InitState(DateTime.Now.Millisecond);
 		foreach (LevelController level in levels)
@@ -37,20 +39,62 @@ public class RoomSpawner : MonoBehaviour {
 
             if(num == 0)
             {
-                Instantiate(level.room1, positon, Quaternion.identity);
+                GameObject room = Instantiate(level.room1, spawnPositon, Quaternion.identity);
+                Transform spawn = null;
+                Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
+                foreach (Transform t in spawnCandidates)
+                {
+                    if (t.CompareTag(spawnTag))
+                    {
+                        spawn = t;
+                        break;
+                    }
+                }
+                if (spawn != null)
+                {
+                    spawnPositon = spawn.position;
+                }
+
             }
             else if(num == 1)
             {
-                Instantiate(level.room2, positon, Quaternion.identity);
+                GameObject room = Instantiate(level.room2, spawnPositon, Quaternion.identity);
+                Transform spawn = null;
+                Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
+                foreach (Transform t in spawnCandidates)
+                {
+                    if (t.CompareTag(spawnTag))
+                    {
+                        spawn = t;
+                        break;
+                    }
+                }
+                if (spawn != null)
+                {
+                    spawnPositon = spawn.position;
+                }
             }
             else if(num == 3)
             {
-                Instantiate(level.room3, positon, Quaternion.identity);
+                GameObject room = Instantiate(level.room3, spawnPositon, Quaternion.identity);
+                Transform spawn = null;
+                Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
+                foreach (Transform t in spawnCandidates)
+                {
+                    if (t.CompareTag(spawnTag))
+                    {
+                        spawn = t;
+                        break;
+                    }
+                }
+                if (spawn != null)
+                {
+                    spawnPositon = spawn.position;
+                }
+
             }
 
-            positon += new Vector3(0, 0, roomLength);
+           
         }
 	}
-	
-	
 }
