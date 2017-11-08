@@ -112,6 +112,65 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &26775167 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1273750796758312, guid: 0bf07f12f267dcb48b3c3f6e6d14a80e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1476356061}
+--- !u!114 &26775169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 26775167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191c2ed92d03f58479a3988d1971962f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTag: 
+  levels:
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+  - room1: {fileID: 0}
+    room2: {fileID: 0}
+    room3: {fileID: 0}
+--- !u!1 &920638532 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 1395861827}
+--- !u!114 &920638541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 920638532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb1532c1e4af548abf0c67ffb23b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDist: 2
+  waitTime: 3
 --- !u!1001 &1395861827
 Prefab:
   m_ObjectHideFlags: 0

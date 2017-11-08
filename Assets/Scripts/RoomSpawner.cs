@@ -32,65 +32,72 @@ public class RoomSpawner : MonoBehaviour {
         Vector3 spawnPositon = transform.position;
 
         UnityEngine.Random.InitState(DateTime.Now.Millisecond);
-		foreach (LevelController level in levels)
+		for(int i = 0; i < levels.Length; ++i)
         {
-            int rand = (int)UnityEngine.Random.value;
+            
+            int rand = (int)(UnityEngine.Random.value * 3);
+            
             int num = rand % 3;
+
+            
 
             if(num == 0)
             {
-                GameObject room = Instantiate(level.room1, spawnPositon, Quaternion.identity);
-                Transform spawn = null;
-                Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
-                foreach (Transform t in spawnCandidates)
-                {
-                    if (t.CompareTag(spawnTag))
-                    {
-                        spawn = t;
-                        break;
-                    }
-                }
-                if (spawn != null)
-                {
-                    spawnPositon = spawn.position;
-                }
+                Debug.Log(1);
+                //GameObject room = Instantiate(level.room1, spawnPositon, Quaternion.identity);
+                //Transform spawn = null;
+                //Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
+                //foreach (Transform t in spawnCandidates)
+                //{
+                //    if (t.CompareTag(spawnTag))
+                //    {
+                //        spawn = t;
+                //        break;
+                //    }
+                //}
+                //if (spawn != null)
+                //{
+                //    spawnPositon = spawn.position;
+                //}
 
             }
             else if(num == 1)
             {
-                GameObject room = Instantiate(level.room2, spawnPositon, Quaternion.identity);
-                Transform spawn = null;
-                Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
-                foreach (Transform t in spawnCandidates)
-                {
-                    if (t.CompareTag(spawnTag))
-                    {
-                        spawn = t;
-                        break;
-                    }
-                }
-                if (spawn != null)
-                {
-                    spawnPositon = spawn.position;
-                }
+                Debug.Log(2);
+                //GameObject room = Instantiate(level.room2, spawnPositon, Quaternion.identity);
+                //Transform spawn = null;
+                //Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
+                //foreach (Transform t in spawnCandidates)
+                //{
+                //    if (t.CompareTag(spawnTag))
+                //    {
+                //        spawn = t;
+                //        break;
+                //    }
+                //}
+                //if (spawn != null)
+                //{
+                //    spawnPositon = spawn.position;
+                //}
             }
-            else if(num == 3)
+            else if(num == 2)
             {
-                GameObject room = Instantiate(level.room3, spawnPositon, Quaternion.identity);
-                Transform spawn = null;
-                Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
-                foreach (Transform t in spawnCandidates)
-                {
-                    if (t.CompareTag(spawnTag))
-                    {
-                        spawn = t;
-                        break;
-                    }
-                }
-                if (spawn != null)
-                {
-                    spawnPositon = spawn.position;
-                }
+                Debug.Log(3);
+                //GameObject room = Instantiate(level.room3, spawnPositon, Quaternion.identity);
+                //Transform spawn = null;
+                //Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
+                //foreach (Transform t in spawnCandidates)
+                //{
+                //    if (t.CompareTag(spawnTag))
+                //    {
+                //        spawn = t;
+                //        break;
+                //    }
+                //}
+                //if (spawn != null)
+                //{
+                //    spawnPositon = spawn.position;
+                //}
 
             }
 
