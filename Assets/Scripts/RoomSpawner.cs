@@ -44,7 +44,7 @@ public class RoomSpawner : MonoBehaviour {
             if(num == 0)
             {
 
-                GameObject room = Instantiate(level.room1, spawnTransform.position, spawnTransform.rotation);
+                GameObject room = Instantiate(level.room1, spawnTransform.position, level.room1.transform.rotation);
                 Transform spawn = null;
                 Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
                 foreach (Transform t in spawnCandidates)
@@ -64,7 +64,7 @@ public class RoomSpawner : MonoBehaviour {
             else if(num == 1)
             {
 
-                GameObject room = Instantiate(level.room2, spawnTransform.position, spawnTransform.rotation);
+                GameObject room = Instantiate(level.room2, spawnTransform.position, level.room2.transform.rotation);
                 Transform spawn = null;
                 Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
                 foreach (Transform t in spawnCandidates)
@@ -83,7 +83,7 @@ public class RoomSpawner : MonoBehaviour {
             else if(num == 2)
             {
                 
-                GameObject room = Instantiate(level.room3, spawnTransform.position, spawnTransform.rotation);
+                GameObject room = Instantiate(level.room3, spawnTransform.position, level.room3.transform.rotation);
                 Transform spawn = null;
                 Transform[] spawnCandidates = room.GetComponentsInChildren<Transform>();
                 foreach (Transform t in spawnCandidates)
