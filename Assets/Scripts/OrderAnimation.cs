@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class OrderAnimation : MonoBehaviour {
 
-    public OrderAnimation instance;
+    public static OrderAnimation instance;
+    public int waitBetween;
     public GameObject[] animObject;
     public Animator[] anim;
 
@@ -39,7 +40,7 @@ public class OrderAnimation : MonoBehaviour {
         for (int i = 0; i < anim.Length; i++)
         {
             instance.anim[i].SetTrigger("Triggered");
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(waitBetween);
         }
         gameObject.SetActive(false);
     }
