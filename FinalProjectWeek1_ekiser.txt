@@ -1,0 +1,13 @@
+This is a Silent Hill PT clone. But instead of having the same thing every
+playthrough, it is randomly generated everytime. So no playthrough is ever 
+the same.
+
+I have found all the game assets that I will Prolly use for the game. Made a 
+generic prefab of the hallway to easily created different hallways. I made a
+couple of animations for the lights. Created some scripts to iterate through
+an array of objects and play the animation on them.
+
+I plan on making some more hallways and find some sounds effects to make the 
+game more "live." Create a Audio manager to play the sounds with distance. Make
+monster thing do things like run at you, disappear, walk into a room, stand still
+until you look at it, and close the doors.
