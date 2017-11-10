@@ -1340,6 +1340,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4520485673914824}
+  - component: {fileID: 114389746265726854}
   m_Layer: 0
   m_Name: SpawnHere
   m_TagString: HallwaySpawn
@@ -2181,6 +2182,7 @@ GameObject:
   - component: {fileID: 4471950175166562}
   - component: {fileID: 65531571925635896}
   - component: {fileID: 114148441502460080}
+  - component: {fileID: 114680502086249172}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Trigger
@@ -3433,7 +3435,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1555514299282410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: -4.3588, z: 47.35}
+  m_LocalPosition: {x: -0, y: -4.1517, z: 48.85}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4628142979532332}
@@ -10680,6 +10682,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animObject: {fileID: 1353900668172408}
   anim: {fileID: 0}
+--- !u!114 &114389746265726854
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1555514299282410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 191c2ed92d03f58479a3988d1971962f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnTag: HallwaySpawn
+  levels:
+  - room1: {fileID: 1886399146548316}
+    room2: {fileID: 1886399146548316}
+    room3: {fileID: 1886399146548316}
 --- !u!114 &114395314358164628
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10845,6 +10863,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animObject: {fileID: 1629021382047830}
   anim: {fileID: 0}
+--- !u!114 &114680502086249172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1873181037806732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d840c483bf5eb9c498371a5f3468e1ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waitBetween: 1
+  animObject:
+  - {fileID: 1353900668172408}
+  - {fileID: 1629021382047830}
+  - {fileID: 1354116445150876}
+  - {fileID: 1307584373526394}
+  - {fileID: 1385566328482102}
+  - {fileID: 1558646189096216}
+  anim:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &114691795560893094
 MonoBehaviour:
   m_ObjectHideFlags: 1
