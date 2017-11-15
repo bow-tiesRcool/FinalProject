@@ -198,6 +198,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4628142979532332, guid: 6d3749d1519e74f43b96e5591909c0e2, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -230,6 +235,60 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.data[0].room1
+      value: 
+      objectReference: {fileID: 1886399146548316, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.data[0].room2
+      value: 
+      objectReference: {fileID: 1886399146548316, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.data[0].room3
+      value: 
+      objectReference: {fileID: 1886399146548316, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.data[1].room1
+      value: 
+      objectReference: {fileID: 1886399146548316, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.data[1].room2
+      value: 
+      objectReference: {fileID: 1886399146548316, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+    - target: {fileID: 114389746265726854, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
+      propertyPath: levels.Array.data[1].room3
+      value: 
+      objectReference: {fileID: 1886399146548316, guid: 6d3749d1519e74f43b96e5591909c0e2,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6d3749d1519e74f43b96e5591909c0e2, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2091370418 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 1194475061}
+--- !u!114 &2091370427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2091370418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6fb1532c1e4af548abf0c67ffb23b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDist: 2
+  waitTime: 3
+  DoorTag: DoorObject

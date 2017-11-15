@@ -377,8 +377,7 @@ GameObject:
   - component: {fileID: 33972697637524784}
   - component: {fileID: 23230196844163820}
   - component: {fileID: 65690196418759800}
-  - component: {fileID: 111271656247183424}
-  - component: {fileID: 114488570277027074}
+  - component: {fileID: 95986450923152938}
   m_Layer: 0
   m_Name: FPH_Door_Diffuse
   m_TagString: DoorObject
@@ -1170,8 +1169,7 @@ GameObject:
   - component: {fileID: 33228177219031396}
   - component: {fileID: 23164141444044358}
   - component: {fileID: 65715949135826614}
-  - component: {fileID: 111804874611465802}
-  - component: {fileID: 114691795560893094}
+  - component: {fileID: 95395342648981432}
   m_Layer: 0
   m_Name: FPH_Door_Diffuse
   m_TagString: DoorObject
@@ -2393,8 +2391,7 @@ GameObject:
   - component: {fileID: 33110842492719580}
   - component: {fileID: 23331581122922620}
   - component: {fileID: 65962112966596238}
-  - component: {fileID: 111521039746321266}
-  - component: {fileID: 114395314358164628}
+  - component: {fileID: 95504454639405122}
   m_Layer: 0
   m_Name: FPH_Door_Diffuse
   m_TagString: DoorObject
@@ -10085,6 +10082,40 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95395342648981432
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1454538100023990}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2167cf0368dcb054ca72e0f0b1a0d64e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95504454639405122
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1921352258169600}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2167cf0368dcb054ca72e0f0b1a0d64e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &95524659785125368
 Animator:
   serializedVersion: 3
@@ -10129,6 +10160,23 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 80519303e422c5b48a78c8d68075a8b3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &95986450923152938
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1215411859573274}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2167cf0368dcb054ca72e0f0b1a0d64e, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -10568,38 +10616,6 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!111 &111271656247183424
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1215411859573274}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 90412761da7494b1886cb353dd21c189, type: 2}
-  - {fileID: 7400000, guid: 1923aa1846e894aad99a941763d74a15, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!111 &111521039746321266
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921352258169600}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 90412761da7494b1886cb353dd21c189, type: 2}
-  - {fileID: 7400000, guid: 1923aa1846e894aad99a941763d74a15, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!111 &111786519635823998
 Animation:
   m_ObjectHideFlags: 1
@@ -10612,22 +10628,6 @@ Animation:
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!111 &111804874611465802
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1454538100023990}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations:
-  - {fileID: 7400000, guid: 90412761da7494b1886cb353dd21c189, type: 2}
-  - {fileID: 7400000, guid: 1923aa1846e894aad99a941763d74a15, type: 2}
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
 --- !u!114 &114148441502460080
@@ -10695,69 +10695,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnTag: HallwaySpawn
   levels: []
---- !u!114 &114395314358164628
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1921352258169600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b18e41f6246645a48c9b9b273009ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  interactingCollider: {fileID: 0}
-  openDoorAniString: FPH_Door_Open
-  closeDoorAniString: FPH_Door_Close
-  autoclose: 0
-  closeAfter: 3
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  objectToAnimate: {fileID: 1921352258169600}
-  lockedSound: {fileID: 0}
-  openSound: {fileID: 0}
-  closeSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  enterOrEsc: 1
 --- !u!114 &114421784015984680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10784,69 +10721,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animObject: {fileID: 1385566328482102}
   anim: {fileID: 0}
---- !u!114 &114488570277027074
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1215411859573274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b18e41f6246645a48c9b9b273009ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  interactingCollider: {fileID: 0}
-  openDoorAniString: FPH_Door_Open
-  closeDoorAniString: FPH_Door_Close
-  autoclose: 0
-  closeAfter: 3
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  objectToAnimate: {fileID: 1215411859573274}
-  lockedSound: {fileID: 0}
-  openSound: {fileID: 0}
-  closeSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  enterOrEsc: 1
 --- !u!114 &114669773749016486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -10886,69 +10760,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &114691795560893094
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1454538100023990}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b18e41f6246645a48c9b9b273009ec2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  interactingCollider: {fileID: 0}
-  openDoorAniString: FPH_Door_Open
-  closeDoorAniString: FPH_Door_Close
-  autoclose: 0
-  closeAfter: 3
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  objectToAnimate: {fileID: 1454538100023990}
-  lockedSound: {fileID: 0}
-  openSound: {fileID: 0}
-  closeSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  enterOrEsc: 1
 --- !u!114 &114799208459693834
 MonoBehaviour:
   m_ObjectHideFlags: 1
