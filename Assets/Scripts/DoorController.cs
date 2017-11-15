@@ -16,6 +16,8 @@ public class DoorController : MonoBehaviour {
 
     public float waitTime = 3f;
 
+    public string DoorTag = "Door";
+
 	// Use this for initialization
 	void Start () {
 		
@@ -46,7 +48,7 @@ public class DoorController : MonoBehaviour {
         {
             if (doorOpenIn)
             {
-                lastanim.SetTrigger("DoorCloseInIn");
+                lastanim.SetTrigger("DoorCloseInOut");
                 doorOpen = false;
             }
             if (!doorOpenIn)
@@ -60,12 +62,12 @@ public class DoorController : MonoBehaviour {
         RaycastHit hitDoor;
         if (Physics.Raycast(r, out hitDoor, raycastDist))
         {
-            if(hitDoor.collider.gameObject.tag == "Door")
+            if(hitDoor.collider.gameObject.tag == DoorTag)
             {
                 lastanim = hitDoor.collider.gameObject.GetComponent<Animator>();
                 if (!doorOpen)
                 {
-                    float dot = Vector3.Dot(hitDoor.normal, hitDoor.collider.transform.forward);
+                    float dot = Vector3.Dot(hitDoor.normal, -hitDoor.collider.transform.right);
                     Debug.Log(dot);
                     if (dot > 0)
                     {
