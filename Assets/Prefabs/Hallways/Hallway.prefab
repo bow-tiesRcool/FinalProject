@@ -10694,10 +10694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnTag: HallwaySpawn
-  levels:
-  - room1: {fileID: 1886399146548316}
-    room2: {fileID: 1886399146548316}
-    room3: {fileID: 1886399146548316}
+  levels: []
 --- !u!114 &114395314358164628
 MonoBehaviour:
   m_ObjectHideFlags: 1
