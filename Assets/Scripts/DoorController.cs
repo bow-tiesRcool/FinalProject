@@ -5,6 +5,7 @@ using UnityEngine;
 public class DoorController : MonoBehaviour {
 
     public float raycastDist = 2f;
+	public bool canOpen;
 
     bool doorOpen = false;
     bool doorOpenIn = false;
@@ -16,8 +17,6 @@ public class DoorController : MonoBehaviour {
 
     public float waitTime = 3f;
 
-    public string DoorTag = "Door";
-
 	// Use this for initialization
 	void Start () {
 		
@@ -25,7 +24,10 @@ public class DoorController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Raycaster();
+		if (canOpen)
+		{
+			Raycaster();
+		}
 	}
 
     void Raycaster()
@@ -48,7 +50,7 @@ public class DoorController : MonoBehaviour {
         {
             if (doorOpenIn)
             {
-                lastanim.SetTrigger("DoorCloseInOut");
+                lastanim.SetTrigger("DoorCloseInIn");
                 doorOpen = false;
             }
             if (!doorOpenIn)
@@ -62,12 +64,12 @@ public class DoorController : MonoBehaviour {
         RaycastHit hitDoor;
         if (Physics.Raycast(r, out hitDoor, raycastDist))
         {
-            if(hitDoor.collider.gameObject.tag == DoorTag)
+            if(hitDoor.collider.gameObject.tag == "Door")
             {
                 lastanim = hitDoor.collider.gameObject.GetComponent<Animator>();
                 if (!doorOpen)
                 {
-                    float dot = Vector3.Dot(hitDoor.normal, -hitDoor.collider.transform.right);
+                    float dot = Vector3.Dot(hitDoor.normal, hitDoor.collider.transform.forward);
                     Debug.Log(dot);
                     if (dot > 0)
                     {
@@ -87,6 +89,5 @@ public class DoorController : MonoBehaviour {
                 }
             }
         }
-        
     }
 }
