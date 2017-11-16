@@ -1569,7 +1569,6 @@ GameObject:
   - component: {fileID: 114154799144936792}
   - component: {fileID: 82712534356996118}
   - component: {fileID: 114423448361335014}
-  - component: {fileID: 114813888034292316}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Trigger
@@ -12044,19 +12043,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1814294551520256}
-  anim: {fileID: 0}
---- !u!114 &114813888034292316
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642510425122346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b0ed2ff707c474c9856303c3f6f6e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
   anim: {fileID: 0}
 --- !u!114 &114827498206989402
 MonoBehaviour:
