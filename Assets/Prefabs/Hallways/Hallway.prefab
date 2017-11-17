@@ -2341,7 +2341,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1910421486894714
 GameObject:
   m_ObjectHideFlags: 1
@@ -11918,11 +11918,17 @@ MonoBehaviour:
   spawnTag: HallwaySpawn
   levels:
   - room1: {fileID: 1848370816113854, guid: 2fa1a4de4102aa64a8bc1f9b251974d1, type: 2}
-    room2: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
+    room2: {fileID: 1848370816113854, guid: 2fa1a4de4102aa64a8bc1f9b251974d1, type: 2}
     room3: {fileID: 1848370816113854, guid: 2fa1a4de4102aa64a8bc1f9b251974d1, type: 2}
+  - room1: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
+    room2: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
+    room3: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
   - room1: {fileID: 1356033939527292, guid: c66fd076d569e2245a2a4d048e493369, type: 2}
     room2: {fileID: 1356033939527292, guid: c66fd076d569e2245a2a4d048e493369, type: 2}
     room3: {fileID: 1356033939527292, guid: c66fd076d569e2245a2a4d048e493369, type: 2}
+  - room1: {fileID: 1166956262012684, guid: f9330c1026dea4e428a86d2671092bb4, type: 2}
+    room2: {fileID: 1166956262012684, guid: f9330c1026dea4e428a86d2671092bb4, type: 2}
+    room3: {fileID: 1166956262012684, guid: f9330c1026dea4e428a86d2671092bb4, type: 2}
 --- !u!114 &114421784015984680
 MonoBehaviour:
   m_ObjectHideFlags: 1

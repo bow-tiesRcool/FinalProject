@@ -1,0 +1,10 @@
+This is a Silent Hill PT clone. But instead of having the same thing every
+playthrough, it is randomly generated everytime. So no playthrough is ever 
+the same.
+
+I found a new Enemy. I found most of the sounds for the game. Made a new Door
+Controller. made some more Hallways.
+
+Make monster thing do things like run at you, disappear, walk into a room, 
+stand still until you look at it, and close the doors. Make more Animations, and 
+Hallways.

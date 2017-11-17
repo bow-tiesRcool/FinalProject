@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 108305918861727608}
   - component: {fileID: 65205939307505514}
   - component: {fileID: 114672793275170594}
+  - component: {fileID: 114990096433294228}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Player
@@ -144,10 +145,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0
+  MaxDistance: 1
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -192,7 +193,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -218,7 +219,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_IsWalking: 0
   m_WalkSpeed: 2
-  m_RunSpeed: 5
+  m_RunSpeed: 3.5
   m_RunstepLenghten: 0.7
   m_JumpSpeed: 0
   m_StickToGroundForce: 10
@@ -468,3 +469,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Light: {fileID: 1638273793266270}
   lightOn: 0
+--- !u!114 &114990096433294228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 425ed9726da591b41870f619323aae79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  raycastDist: 2

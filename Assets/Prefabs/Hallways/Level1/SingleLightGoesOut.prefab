@@ -4032,7 +4032,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374768409189250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.67957, y: 31.201283, z: 113.104256}
+  m_LocalPosition: {x: 236.92378, y: 191.05551, z: 208.90152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4946538849924216}
@@ -11869,7 +11869,7 @@ MonoBehaviour:
   sound: {fileID: 82783008456242438}
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
-  tryOpen: {fileID: 8300000, guid: 1970310994e513a4dbd7ab3e826c0910, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   close: 1
   canOpen: 0
 --- !u!114 &114183205050012190
@@ -11899,7 +11899,7 @@ MonoBehaviour:
   sound: {fileID: 82844011013479414}
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
-  tryOpen: {fileID: 8300000, guid: 1970310994e513a4dbd7ab3e826c0910, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   close: 1
   canOpen: 0
 --- !u!114 &114394598387819416
@@ -11917,9 +11917,9 @@ MonoBehaviour:
   sound: {fileID: 82702742119210436}
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
-  tryOpen: {fileID: 8300000, guid: 1970310994e513a4dbd7ab3e826c0910, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   close: 1
-  canOpen: 0
+  canOpen: 1
 --- !u!114 &114569695168570768
 MonoBehaviour:
   m_ObjectHideFlags: 1

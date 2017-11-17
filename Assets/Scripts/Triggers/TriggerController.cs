@@ -17,8 +17,14 @@ public class TriggerController : MonoBehaviour {
         Debug.Log(other.tag);
         if (other.CompareTag("Player"))
         {
-            anim.SetTrigger("Triggered");
-            gameObject.SetActive(false);
+			StartCoroutine("Timer");
         }
     }
+
+	IEnumerator Timer()
+	{
+		anim.SetTrigger("Triggered");
+		yield return new WaitForSeconds(2);
+		gameObject.SetActive(false);
+	}
 }
