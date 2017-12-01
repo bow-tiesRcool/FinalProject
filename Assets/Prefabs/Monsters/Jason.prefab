@@ -448,6 +448,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1346803260102284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4196065116789612}
+  - component: {fileID: 65640495231093194}
+  m_Layer: 0
+  m_Name: Tigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1357392178011428
 GameObject:
   m_ObjectHideFlags: 1
@@ -1000,6 +1016,8 @@ GameObject:
   - component: {fileID: 4548577633553120}
   - component: {fileID: 136179642423014178}
   - component: {fileID: 54812096687292680}
+  - component: {fileID: 95519815748845832}
+  - component: {fileID: 114949317714152694}
   m_Layer: 0
   m_Name: Jason
   m_TagString: Untagged
@@ -1492,6 +1510,19 @@ Transform:
   m_Father: {fileID: 4703446111909706}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4196065116789612
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346803260102284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 25.27}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4548577633553120}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4225415282152922
 Transform:
   m_ObjectHideFlags: 1
@@ -1833,8 +1864,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1783666995057928}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5011406, y: -2.3484278, z: 6.3985553}
+  m_LocalRotation: {x: -0, y: 0.999975, z: -0, w: -0.007070268}
+  m_LocalPosition: {x: 0.2, y: -0.091, z: 35.62}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4901255555938434}
@@ -1844,9 +1875,10 @@ Transform:
   - {fileID: 4453206519809924}
   - {fileID: 4713187748413768}
   - {fileID: 4901446156019372}
+  - {fileID: 4196065116789612}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180.81, z: 0}
 --- !u!4 &4560240190524532
 Transform:
   m_ObjectHideFlags: 1
@@ -2302,7 +2334,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634017110405052}
-  m_LocalRotation: {x: 0.7162894, y: -0.3113972, z: 0.02770902, w: 0.62385386}
+  m_LocalRotation: {x: 0.71628934, y: -0.31139717, z: 0.027709015, w: 0.6238538}
   m_LocalPosition: {x: 0.043789014, y: -0.012560482, z: 0.02583688}
   m_LocalScale: {x: 1, y: 0.9999993, z: 1.0000007}
   m_Children:
@@ -2356,6 +2388,48 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
+--- !u!65 &65640495231093194
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346803260102284}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.735632, y: 4.3469, z: 0.20052573}
+  m_Center: {x: 0.33775878, y: 1.67345, z: 0.39974034}
+--- !u!95 &95519815748845832
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783666995057928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 05b91221a3820e44c89b1a0826216b59, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3fedc57cd99cbad419d6f911c83affb2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114949317714152694
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783666995057928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b7caa9ea68eb9458ba0f12ba884ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  running: 0
+  trigger: {fileID: 65640495231093194}
 --- !u!136 &136179642423014178
 CapsuleCollider:
   m_ObjectHideFlags: 1

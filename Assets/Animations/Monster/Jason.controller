@@ -13,19 +13,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Forward
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Side
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -49,7 +49,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: a4def1ed76ce4544680f2cb5a62133e9, type: 3}
     m_Threshold: 0
-    m_Position: {x: 0, y: 0.724722}
+    m_Position: {x: 0, y: 0.5}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
@@ -57,7 +57,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 4e74889a8df999445bbdd8369bf9637a, type: 3}
     m_Threshold: 2
-    m_Position: {x: 0, y: 3.9554772}
+    m_Position: {x: 0, y: 1}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
@@ -65,7 +65,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 473d9a640da87f146af64969b0e263f6, type: 3}
     m_Threshold: 4
-    m_Position: {x: -0.5261276, y: 1.2645205}
+    m_Position: {x: 1, y: 0.5}
     m_TimeScale: 1
     m_CycleOffset: 0.5
     m_DirectBlendParameter: Forward
@@ -73,7 +73,7 @@ BlendTree:
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 473d9a640da87f146af64969b0e263f6, type: 3}
     m_Threshold: 6
-    m_Position: {x: 0.5261276, y: 1.2645205}
+    m_Position: {x: -1, y: 0.5}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Forward
@@ -128,7 +128,7 @@ AnimatorStateMachine:
   m_ChildStates:
   - serializedVersion: 1
     m_State: {fileID: 1102598095389660902}
-    m_Position: {x: 276, y: 12, z: 0}
+    m_Position: {x: 312, y: 120, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
