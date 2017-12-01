@@ -463,6 +463,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1371969059506532
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4510979183671120}
+  - component: {fileID: 114436204042451648}
+  m_Layer: 0
+  m_Name: AI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1375184077434242
 GameObject:
   m_ObjectHideFlags: 1
@@ -998,8 +1014,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4548577633553120}
-  - component: {fileID: 136179642423014178}
   - component: {fileID: 54812096687292680}
+  - component: {fileID: 143788688681667222}
+  - component: {fileID: 95486893942103932}
+  - component: {fileID: 114435892399924714}
   m_Layer: 0
   m_Name: Jason
   m_TagString: Untagged
@@ -1800,6 +1818,19 @@ Transform:
   m_Father: {fileID: 4356427477694988}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4510979183671120
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371969059506532}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4548577633553120}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4525157602561618
 Transform:
   m_ObjectHideFlags: 1
@@ -1833,8 +1864,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1783666995057928}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.5011406, y: -2.3484278, z: 6.3985553}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -0.02, y: -4.2889, z: 43.909}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4901255555938434}
@@ -1844,9 +1875,10 @@ Transform:
   - {fileID: 4453206519809924}
   - {fileID: 4713187748413768}
   - {fileID: 4901446156019372}
+  - {fileID: 4510979183671120}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!4 &4560240190524532
 Transform:
   m_ObjectHideFlags: 1
@@ -2302,7 +2334,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1634017110405052}
-  m_LocalRotation: {x: 0.7162894, y: -0.3113972, z: 0.02770902, w: 0.62385386}
+  m_LocalRotation: {x: 0.71628934, y: -0.31139717, z: 0.027709015, w: 0.6238538}
   m_LocalPosition: {x: 0.043789014, y: -0.012560482, z: 0.02583688}
   m_LocalScale: {x: 1, y: 0.9999993, z: 1.0000007}
   m_Children:
@@ -2356,19 +2388,116 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 84
   m_CollisionDetection: 0
---- !u!136 &136179642423014178
-CapsuleCollider:
+--- !u!95 &95486893942103932
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1783666995057928}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.25
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Avatar: {fileID: 9000000, guid: 05b91221a3820e44c89b1a0826216b59, type: 3}
+  m_Controller: {fileID: 9100000, guid: 3fedc57cd99cbad419d6f911c83affb2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &114435892399924714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783666995057928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72b7caa9ea68eb9458ba0f12ba884ecd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114436204042451648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1371969059506532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 157053555, guid: 9fa2ecd1ff2ad394281dd3bf72c5b76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dataSerializer:
+    _preferredSerialization: 2
+    _serializedData: 
+    _serializedMetaData: <meta></meta>
+    _serializedGameObjects: []
+    _serializedCustomData: []
+  _serializer:
+    _preferredSerialization: 2
+    _includeCustomData: 0
+    _serializedDocument: "\n{\n    \"component\" : {\n        \"-version\" : \"1.8\",\n
+      \       \"-type\"    : \"RAIN.Core.AIRig\",\n        \"-reference\" : \"0\",\n
+      \       \"-includecustomdata\" : \"False\",\n        \"_visualMode\"        :
+      \"OnWhenSelected\",\n        \"_useUnityMessages\"  : \"True\",\n        \"_useFixedUpdate\"
+      \   : \"False\",\n        \"_ai\"                : {\n            \"-reference\"
+      : \"1\",\n            \"_isActive\"  : \"True\",\n            \"_body\"      :
+      {\n                \"-sceneobject\" : \"\"\n            },\n            \"_workingMemory\"
+      : {\n                \"-type\" : \"RAIN.Memory.BasicMemory\",\n                \"-reference\"
+      : \"2\",\n                \"_memoryItems\" : {\n                }\n            },\n
+      \           \"_mind\"          : {\n                \"-type\" : \"RAIN.Minds.BasicMind\",\n
+      \               \"-reference\" : \"3\",\n                \"_behaviorTree\" :
+      {\n                    \"-object\" : \"-1\"\n                },\n                \"_behaviorTreeBindings\"
+      : {\n                }\n            },\n            \"_motor\"         : {\n
+      \               \"-type\" : \"RAIN.Motion.BasicMotor\",\n                \"-reference\"
+      : \"4\",\n                \"_speed\"     : \"1\",\n                \"_rotationSpeed\"
+      : \"360\",\n                \"_closeEnoughDistance\" : \"0.1\",\n                \"_closeEnoughAngle\"
+      \   : \"0.1\",\n                \"_faceBeforeMoveAngle\" : \"360\",\n                \"_maxHeightOffset\"
+      \    : \"1\",\n                \"_allow3DMovement\"     : \"False\",\n                \"_allow3DRotation\"
+      \    : \"False\",\n                \"_allowOffGraphMovement\" : \"True\",\n
+      \               \"_useRootMotion\"         : \"False\",\n                \"_overrideRootRotation\"
+      \ : \"True\",\n                \"_mecanimParameters\"     : {\n                }\n
+      \           },\n            \"_animator\"      : {\n                \"-type\"
+      : \"RAIN.Animation.BasicAnimator\",\n                \"-reference\" : \"5\",\n
+      \               \"_showVisual\" : \"True\",\n                \"_leftEye\"    :
+      {\n                    \"-reference\" : \"6\",\n                    \"_jointColor\"
+      : \"0,1,0,1\",\n                    \"_joint\"      : {\n                        \"-sceneobject\"
+      : \"\"\n                    },\n                    \"_jointOffset\" : \"0,0,0\",\n
+      \                   \"_jointOrientation\" : \"0,0,0\",\n                    \"_maxLeftRight\"
+      \    : \"60\",\n                    \"_maxUpDown\"        : \"45\",\n                    \"_weight\"
+      \          : \"1\"\n                },\n                \"_rightEye\"   : {\n
+      \                   \"-reference\" : \"7\",\n                    \"_jointColor\"
+      : \"0,1,0,1\",\n                    \"_joint\"      : {\n                        \"-sceneobject\"
+      : \"\"\n                    },\n                    \"_jointOffset\" : \"0,0,0\",\n
+      \                   \"_jointOrientation\" : \"0,0,0\",\n                    \"_maxLeftRight\"
+      \    : \"60\",\n                    \"_maxUpDown\"        : \"45\",\n                    \"_weight\"
+      \          : \"1\"\n                },\n                \"_head\"       : {\n
+      \                   \"-reference\" : \"8\",\n                    \"_jointColor\"
+      : \"0,1,0,1\",\n                    \"_joint\"      : {\n                        \"-sceneobject\"
+      : \"\"\n                    },\n                    \"_jointOffset\" : \"0,0,0\",\n
+      \                   \"_jointOrientation\" : \"0,0,0\",\n                    \"_maxLeftRight\"
+      \    : \"60\",\n                    \"_maxUpDown\"        : \"45\",\n                    \"_weight\"
+      \          : \"1\"\n                },\n                \"_neck\"       : {\n
+      \                   \"-reference\" : \"9\",\n                    \"_jointColor\"
+      : \"0,1,0,1\",\n                    \"_joint\"      : {\n                        \"-sceneobject\"
+      : \"\"\n                    },\n                    \"_jointOffset\" : \"0,0,0\",\n
+      \                   \"_jointOrientation\" : \"0,0,0\",\n                    \"_maxLeftRight\"
+      \    : \"60\",\n                    \"_maxUpDown\"        : \"45\",\n                    \"_weight\"
+      \          : \"1\"\n                },\n                \"_lookTime\"   : \"1\",\n
+      \               \"_minimumTargetChange\" : \"0.1\",\n                \"_resetEachFrame\"
+      \     : \"False\"\n            },\n            \"_navigator\"     : {\n                \"-type\"
+      : \"RAIN.Navigation.BasicNavigator\",\n                \"-reference\" : \"10\",\n
+      \               \"_drawPaths\" : \"False\",\n                \"_pathColor\"
+      : \"0,1,0,1\",\n                \"_outlineColorOffset\" : \"-0.5\",\n                \"_maxPathfindingSteps\"
+      : \"100\",\n                \"_maxPathLength\"       : \"0\",\n                \"_padding\"
+      \            : \"0\",\n                \"_graphTags\"           : {\n                }\n
+      \           },\n            \"_senses\"        : {\n                \"-type\"
+      : \"RAIN.Perception.BasicSenses\",\n                \"-reference\" : \"11\",\n
+      \               \"_sensors\"   : {\n                }\n            },\n            \"_customElements\"
+      : {\n            }\n        }\n    }\n}"
+    _serializedMetaDocument: <meta></meta>
+    _serializedObjects: []
+    _serializedCustomData: []
 --- !u!137 &137060859399380658
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -2768,3 +2897,20 @@ SkinnedMeshRenderer:
     m_Center: {x: 0.006303102, y: 0.033774517, z: 0.6081571}
     m_Extent: {x: 0.34898221, y: 0.23111838, z: 0.6249451}
   m_DirtyAABB: 0
+--- !u!143 &143788688681667222
+CharacterController:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1783666995057928}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2.1
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 1.05, z: 0}
