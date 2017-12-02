@@ -4,90 +4,92 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour {
 
-    public float raycastDist = 2f;
-	public bool canOpen;
+	public GameObject door;
+	Animator anim;
 
-    bool doorOpen = false;
-    bool doorOpenIn = false;
+	public AudioSource sound;
+	public AudioClip openDoor;
+	public AudioClip closeDoor;
+	public AudioClip tryOpen;
+	public AudioClip slamDoor;
 
-    Animator lastanim;
-    bool animationPlayed = false;
+	public bool close = true;
 
-    float timer = 0;
+	public bool canOpen = false;
 
-    public float waitTime = 3f;
+	public bool openItself = false;
 
-	// Use this for initialization
-	void Start () {
-		
+	public bool slam = false;
+
+	private void Start()
+	{
+		anim = door.GetComponent<Animator>();
+		sound.clip = tryOpen;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		if (canOpen)
+
+	public void DoorAction()
+	{
+		if (canOpen && close)
 		{
-			Raycaster();
+			StartCoroutine("DoorOpen");
 		}
 	}
 
-    void Raycaster()
-    {
-        if (animationPlayed)
-        {
-            if(timer >= waitTime)
-            {
-                animationPlayed = false;
-                timer = 0;
-            }
-            else
-            {
-                timer += Time.deltaTime;
-                return;
-            }
-        }
+	public void SlamAction()
+	{
+		if (openItself && slam)
+		{
+			StartCoroutine("SlamDoor");
+		}
+	}
 
-        if (doorOpen)
-        {
-            if (doorOpenIn)
-            {
-                lastanim.SetTrigger("DoorCloseInIn");
-                doorOpen = false;
-            }
-            if (!doorOpenIn)
-            {
-                lastanim.SetTrigger("DoorCloseOutIn");
-                doorOpen = false;
-            }
-        }
+	public void CanOpen()
+	{
+		canOpen = true;
+	}
 
-        Ray r = new Ray(transform.position, transform.forward);
-        RaycastHit hitDoor;
-        if (Physics.Raycast(r, out hitDoor, raycastDist))
-        {
-            if(hitDoor.collider.gameObject.tag == "Door")
-            {
-                lastanim = hitDoor.collider.gameObject.GetComponent<Animator>();
-                if (!doorOpen)
-                {
-                    float dot = Vector3.Dot(hitDoor.normal, hitDoor.collider.transform.forward);
-                    Debug.Log(dot);
-                    if (dot > 0)
-                    {
-                        hitDoor.collider.gameObject.GetComponent<Animator>().SetTrigger("DoorOpenIn");
-                        doorOpen = true;
-                        animationPlayed = true;
-                        doorOpenIn = true;
-                        Debug.Log("Raycast hit front of door");
-                    }else if(dot < 0)
-                    {
-                        hitDoor.collider.gameObject.GetComponent<Animator>().SetTrigger("DoorOpenOut");
-                        doorOpen = true;
-                        animationPlayed = true;
-                        doorOpenIn = false;
-                        Debug.Log("Raycast Back front of door");
-                    }
-                }
-            }
-        }
-    }
+	IEnumerator DoorOpen()
+	{
+		sound.clip = openDoor;
+		anim.SetTrigger("Open");
+		sound.Play();
+		close = false;
+		yield return new WaitForSeconds(3);
+	}
+
+	IEnumerator CloseDoor()
+	{
+		sound.clip = closeDoor;
+		anim.SetTrigger("CloseDoor");
+		yield return new WaitForSeconds(1);
+		sound.Play();
+		close = true;
+	}
+
+	IEnumerator SlamDoor()
+	{
+		sound.clip = slamDoor;
+		anim.SetTrigger("SlamDoor");
+		yield return new WaitForSeconds(.5f);
+		sound.Play();
+		close = true;
+	}
+
+	private void OnTriggerExit(Collider other)
+	{
+		if (other.gameObject.CompareTag("Player") && !close && !openItself)
+		{
+			StartCoroutine("CloseDoor");
+		}
+	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.gameObject.CompareTag("Player") && !canOpen)
+		{
+			sound.clip = tryOpen;
+			sound.Play();
+			anim.SetTrigger("TriedOpen");
+		}
+	}
 }

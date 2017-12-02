@@ -1583,12 +1583,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4606104241675762}
   - component: {fileID: 65195488724665462}
-  - component: {fileID: 114154799144936792}
-  - component: {fileID: 82712534356996118}
-  - component: {fileID: 114423448361335014}
   m_Layer: 0
   m_Name: Trigger
-  m_TagString: Trigger
+  m_TagString: DoorTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2666,7 +2663,7 @@ Transform:
   m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 4904834886271568}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &4064900114626786
 Transform:
@@ -3277,7 +3274,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4904834886271568}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4344452571427378
 Transform:
@@ -3703,7 +3700,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4829740331805804}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 270, y: 367.50623, z: 0}
+  m_LocalEulerAnglesHint: {x: 270, y: 360, z: 0}
 --- !u!4 &4514814726149712
 Transform:
   m_ObjectHideFlags: 1
@@ -3715,7 +3712,7 @@ Transform:
   m_LocalScale: {x: 0.935, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4904834886271568}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4530423643808180
 Transform:
@@ -3859,13 +3856,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1642510425122346}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.25, y: 0.7, z: 2.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.42, y: 0.7, z: 26.79}
+  m_LocalScale: {x: 1.0000005, y: 1, z: 1.0000005}
   m_Children: []
   m_Father: {fileID: 4904834886271568}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4607921277045202
 Transform:
   m_ObjectHideFlags: 1
@@ -4247,7 +4244,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4904834886271568}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4818277485930668
 Transform:
@@ -4381,7 +4378,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1557641227895998}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 22.791752, y: 2.7527146, z: 45.31535}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4307293165521462}
@@ -4390,11 +4387,11 @@ Transform:
   - {fileID: 4767362780966706}
   - {fileID: 4155981962587384}
   - {fileID: 4585142310524918}
-  - {fileID: 4606104241675762}
   - {fileID: 4514814726149712}
   - {fileID: 4064715175715766}
   - {fileID: 4338441774833526}
   - {fileID: 4813542733141310}
+  - {fileID: 4606104241675762}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11097,86 +11094,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!82 &82712534356996118
-AudioSource:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642510425122346}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 929bce83d3dd2464cad14942c17cfd9a, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
 --- !u!82 &82773736797435294
 AudioSource:
   m_ObjectHideFlags: 1
@@ -11951,9 +11868,15 @@ MonoBehaviour:
   sound: {fileID: 82331732275353104}
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
-  tryOpen: {fileID: 8300000, guid: 1970310994e513a4dbd7ab3e826c0910, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
   canOpen: 0
+  doorTrigger: {fileID: 1642510425122346}
+  openItself: 0
+  slam: 0
+  slamTrigger: {fileID: 0}
+  waitTillSomething: 0
 --- !u!114 &114079670209429190
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11967,32 +11890,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animObject: {fileID: 1903141937049942}
   anim: {fileID: 0}
---- !u!114 &114154799144936792
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642510425122346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d840c483bf5eb9c498371a5f3468e1ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waitBetween: 010000000100000001000000010000000600000001000000
-  animObject:
-  - {fileID: 1586094147180516}
-  - {fileID: 1903141937049942}
-  - {fileID: 1513219397715264}
-  - {fileID: 1752256175385404}
-  - {fileID: 1814294551520256}
-  - {fileID: 1191834727578718}
-  anim:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!114 &114239758265395558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12020,9 +11917,15 @@ MonoBehaviour:
   sound: {fileID: 82555857930864482}
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
-  tryOpen: {fileID: 8300000, guid: 1970310994e513a4dbd7ab3e826c0910, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
-  canOpen: 0
+  canOpen: 1
+  doorTrigger: {fileID: 0}
+  openItself: 0
+  slam: 0
+  slamTrigger: {fileID: 0}
+  waitTillSomething: 0
 --- !u!114 &114383050801776754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12036,18 +11939,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animObject: {fileID: 1586094147180516}
   anim: {fileID: 0}
---- !u!114 &114423448361335014
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1642510425122346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e5f633b37fe3574aab2b9185bab77c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 82712534356996118}
 --- !u!114 &114466988606052496
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12114,9 +12005,15 @@ MonoBehaviour:
   sound: {fileID: 82773736797435294}
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
-  tryOpen: {fileID: 8300000, guid: 1970310994e513a4dbd7ab3e826c0910, type: 3}
-  close: 1
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
+  close: 0
   canOpen: 1
+  doorTrigger: {fileID: 0}
+  openItself: 1
+  slam: 0
+  slamTrigger: {fileID: 0}
+  waitTillSomething: 0
 --- !u!114 &114883972966303320
 MonoBehaviour:
   m_ObjectHideFlags: 1
