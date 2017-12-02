@@ -1,0 +1,5 @@
+I corrected the door sounds. And I made a class for the AI so it takes a set of 
+instructons.
+
+Make more Animations, and Hallways. fix the sounds. Create a game loop, and menu
+screen.
