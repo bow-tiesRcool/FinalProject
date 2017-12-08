@@ -14921,7 +14921,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 2
-  MaxDistance: 7
+  MaxDistance: 12
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -16573,7 +16573,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 570032422
+  randomSeed: 1955216837
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -19854,7 +19854,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -311021178
+  randomSeed: 1692530396
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -23111,7 +23111,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 348910077
+  randomSeed: -601776064
   InitialModule:
     serializedVersion: 3
     enabled: 1

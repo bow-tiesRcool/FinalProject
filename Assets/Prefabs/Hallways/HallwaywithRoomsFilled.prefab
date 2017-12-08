@@ -3638,7 +3638,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1140611470059074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.7, y: 0, z: 0}
+  m_LocalPosition: {x: -6.4484673, y: 0.17052698, z: 21.383677}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4146667878956644}
@@ -14440,7 +14440,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 2
-  MaxDistance: 7
+  MaxDistance: 12
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0
@@ -16557,7 +16557,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 348910077
+  randomSeed: -373840432
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -19850,7 +19850,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 570032422
+  randomSeed: 944061190
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -23131,7 +23131,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -311021178
+  randomSeed: -2104757173
   InitialModule:
     serializedVersion: 3
     enabled: 1
