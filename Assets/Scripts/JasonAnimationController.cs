@@ -15,7 +15,7 @@ public class EnemyController
 public class JasonAnimationController : MonoBehaviour {
     Animator anim;
     //use these when your changing the animator's peramitors
-
+    
     //change the animators forward peramitors to make these things happen
     float walk = .5f;
     float run = 1f;
@@ -33,13 +33,10 @@ public class JasonAnimationController : MonoBehaviour {
 		trigger = GetComponentInChildren<Collider>();
     }
 
-	private void OnTriggerEnter(Collider other)
-	{
-		if (other.CompareTag("Player"))
-		{
-			Debug.Log(other);
-			StartCoroutine("Controller");
-		}
+    // Use this for initialization
+    void Start ()
+    {
+        anim.SetFloat("Forward", walk);
 	}
 
 	IEnumerator Controller()
