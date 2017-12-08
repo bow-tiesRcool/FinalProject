@@ -7,6 +7,9 @@ TagManager:
   - Trigger
   - Door
   - HallwaySpawn
+  - DoorObject
+  - DoorTrigger
+  - SlamTrigger
   layers:
   - Default
   - TransparentFX
@@ -16,7 +19,7 @@ TagManager:
   - UI
   - 
   - 
-  - 
+  - LightBlocker
   - 
   - 
   - 

@@ -23,7 +23,7 @@ public class RayCaster : MonoBehaviour
 		{
 			if (hit.collider.gameObject.tag == "Door")
 			{
-				hit.collider.GetComponent<DoorControllerE>().DoorAction();
+				hit.collider.GetComponent<DoorController>().DoorAction();
 			}
 			if (hit.collider.gameObject.tag == "Enemy")
 			{
