@@ -3770,7 +3770,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1356033939527292}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 211.50175, y: 124.176216, z: 282.30832}
+  m_LocalPosition: {x: -27.34, y: 124.176216, z: 282.30832}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4274101944692118}
@@ -11978,8 +11978,11 @@ MonoBehaviour:
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
   tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
   canOpen: 0
+  openItself: 0
+  slam: 0
 --- !u!114 &114088121818416938
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12022,8 +12025,11 @@ MonoBehaviour:
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
   tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
   canOpen: 1
+  openItself: 0
+  slam: 0
 --- !u!114 &114321447376294586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -12103,8 +12109,11 @@ MonoBehaviour:
   openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
   closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
   tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
   canOpen: 0
+  openItself: 0
+  slam: 0
 --- !u!114 &114898923773669492
 MonoBehaviour:
   m_ObjectHideFlags: 1

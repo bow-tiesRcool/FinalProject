@@ -2289,7 +2289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1891778309814848
 GameObject:
   m_ObjectHideFlags: 1
@@ -3760,7 +3760,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1886399146548316}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -53.7, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4576373370846642}
@@ -10388,7 +10388,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -10400,7 +10400,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -10412,7 +10412,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &82123043480306766
 AudioSource:
   m_ObjectHideFlags: 1
@@ -10708,7 +10708,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -10720,7 +10720,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -10732,7 +10732,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &82418559785171158
 AudioSource:
   m_ObjectHideFlags: 1
@@ -11028,7 +11028,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11040,7 +11040,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -11052,7 +11052,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
 --- !u!82 &82878682250242834
 AudioSource:
   m_ObjectHideFlags: 1
@@ -11835,19 +11835,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9a3a32178e11c4a8064d15421ccab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
-  sound: {fileID: 0}
-  openDoor: {fileID: 0}
-  closeDoor: {fileID: 0}
-  tryOpen: {fileID: 0}
-  slamDoor: {fileID: 0}
+  door: {fileID: 1921352258169600}
+  sound: {fileID: 82002813675581484}
+  openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
+  closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
   canOpen: 1
-  doorTrigger: {fileID: 0}
   openItself: 0
   slam: 0
-  slamTrigger: {fileID: 0}
-  waitTillSomething: 0
 --- !u!114 &114189509149141364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11859,7 +11856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558c17f26d60864fbbf379198c0edc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
+  animObject: {fileID: 1354116445150876}
   anim: {fileID: 0}
 --- !u!114 &114303658227838700
 MonoBehaviour:
@@ -11872,7 +11869,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558c17f26d60864fbbf379198c0edc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
+  animObject: {fileID: 1353900668172408}
   anim: {fileID: 0}
 --- !u!114 &114326574381425504
 MonoBehaviour:
@@ -11885,19 +11882,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9a3a32178e11c4a8064d15421ccab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
-  sound: {fileID: 0}
-  openDoor: {fileID: 0}
-  closeDoor: {fileID: 0}
-  tryOpen: {fileID: 0}
-  slamDoor: {fileID: 0}
+  door: {fileID: 1504742198871462}
+  sound: {fileID: 82005147375851102}
+  openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
+  closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
-  canOpen: 1
-  doorTrigger: {fileID: 0}
+  canOpen: 0
   openItself: 0
   slam: 0
-  slamTrigger: {fileID: 0}
-  waitTillSomething: 0
 --- !u!114 &114389746265726854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11909,8 +11903,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 191c2ed92d03f58479a3988d1971962f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnTag: 
-  levels: []
+  spawnTag: HallwaySpawn
+  levels:
+  - room1: {fileID: 1848370816113854, guid: 2fa1a4de4102aa64a8bc1f9b251974d1, type: 2}
+    room2: {fileID: 1848370816113854, guid: 2fa1a4de4102aa64a8bc1f9b251974d1, type: 2}
+    room3: {fileID: 1848370816113854, guid: 2fa1a4de4102aa64a8bc1f9b251974d1, type: 2}
+  - room1: {fileID: 1032495983797062, guid: 7fd0084fc84cfd443833359d38764691, type: 2}
+    room2: {fileID: 1032495983797062, guid: 7fd0084fc84cfd443833359d38764691, type: 2}
+    room3: {fileID: 1032495983797062, guid: 7fd0084fc84cfd443833359d38764691, type: 2}
+  - room1: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
+    room2: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
+    room3: {fileID: 1374768409189250, guid: ef8646f10648fe348850826e0199de1d, type: 2}
+  - room1: {fileID: 1356033939527292, guid: c66fd076d569e2245a2a4d048e493369, type: 2}
+    room2: {fileID: 1356033939527292, guid: c66fd076d569e2245a2a4d048e493369, type: 2}
+    room3: {fileID: 1356033939527292, guid: c66fd076d569e2245a2a4d048e493369, type: 2}
+  - room1: {fileID: 1166956262012684, guid: f9330c1026dea4e428a86d2671092bb4, type: 2}
+    room2: {fileID: 1166956262012684, guid: f9330c1026dea4e428a86d2671092bb4, type: 2}
+    room3: {fileID: 1166956262012684, guid: f9330c1026dea4e428a86d2671092bb4, type: 2}
 --- !u!114 &114421784015984680
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11922,7 +11931,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558c17f26d60864fbbf379198c0edc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
+  animObject: {fileID: 1558646189096216}
   anim: {fileID: 0}
 --- !u!114 &114430774554134826
 MonoBehaviour:
@@ -11935,7 +11944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558c17f26d60864fbbf379198c0edc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
+  animObject: {fileID: 1385566328482102}
   anim: {fileID: 0}
 --- !u!114 &114611218043994642
 MonoBehaviour:
@@ -11948,19 +11957,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa9a3a32178e11c4a8064d15421ccab6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  door: {fileID: 0}
-  sound: {fileID: 0}
-  openDoor: {fileID: 0}
-  closeDoor: {fileID: 0}
-  tryOpen: {fileID: 0}
-  slamDoor: {fileID: 0}
+  door: {fileID: 1221043633963820}
+  sound: {fileID: 82452091952288986}
+  openDoor: {fileID: 8300000, guid: 668988541c4288843abedf97b390ce34, type: 3}
+  closeDoor: {fileID: 8300000, guid: 041995c245ff3814c8fd2370832fba3b, type: 3}
+  tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
+  slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
-  canOpen: 1
-  doorTrigger: {fileID: 0}
+  canOpen: 0
   openItself: 0
   slam: 0
-  slamTrigger: {fileID: 0}
-  waitTillSomething: 0
 --- !u!114 &114669773749016486
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -11972,7 +11978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558c17f26d60864fbbf379198c0edc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
+  animObject: {fileID: 1629021382047830}
   anim: {fileID: 0}
 --- !u!114 &114799208459693834
 MonoBehaviour:
@@ -11997,7 +12003,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e558c17f26d60864fbbf379198c0edc4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animObject: {fileID: 0}
+  animObject: {fileID: 1307584373526394}
   anim: {fileID: 0}
 --- !u!198 &198258811216869730
 ParticleSystem:
