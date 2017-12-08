@@ -5,6 +5,15 @@ using UnityEngine;
 public class RayCaster : MonoBehaviour
 {
 	public float raycastDist = 2f;
+	public static RayCaster instance;
+
+	private void Awake()
+	{
+		if (instance == null)
+		{
+			instance = this;
+		}
+	}
 
 	void Update()
 	{
@@ -15,6 +24,14 @@ public class RayCaster : MonoBehaviour
 			if (hit.collider.gameObject.tag == "Door")
 			{
 				hit.collider.GetComponent<DoorController>().DoorAction();
+			}
+			if (hit.collider.gameObject.tag == "Enemy")
+			{
+				Debug.Log("Hit Enemy");
+			}
+			if (hit.collider.gameObject.tag == "NextRoomDoor")
+			{
+				Debug.Log("Hit NextRoomDoor");
 			}
 		}
 	}
