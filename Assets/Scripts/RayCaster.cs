@@ -27,6 +27,7 @@ public class RayCaster : MonoBehaviour
 			}
 			if (hit.collider.gameObject.tag == "Enemy")
 			{
+				if (!hit.collider.GetComponent<JasonInFace>().pop)
 				hit.collider.GetComponent<JasonInFace>().InFace();
 			}
 		}

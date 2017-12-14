@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class JasonInFace : MonoBehaviour {
 
-	public Camera playerCamera;
+	public GameObject player;
 	public GameObject itemObject;
+	public bool pop = false;
 
 	public void InFace()
 	{
-		itemObject.transform.position = playerCamera.transform.position + Vector3.forward;
+		pop = true;
+		itemObject.transform.position = player.transform.position + Vector3.back + Vector3.down;
 	}
 }
