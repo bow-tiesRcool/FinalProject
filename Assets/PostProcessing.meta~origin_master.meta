@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+guid: 5828dbb1cd2df8f468c8569ab63d4c7a
+timeCreated: 1512704349
+licenseType: Free
+=======
 guid: cfb1e12745cc4a04785bcd4fbc6875c9
 timeCreated: 1512697737
 licenseType: Pro
+>>>>>>> WorkingBranch-Chris
 DefaultImporter:
   externalObjects: {}
   userData: 
