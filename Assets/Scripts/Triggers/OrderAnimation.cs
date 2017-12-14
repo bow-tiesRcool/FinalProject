@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OrderAnimation : MonoBehaviour {
 
-    public int[] waitBetween;
+    public float[] waitBetween;
     public GameObject[] animObject;
     public Animator[] anim;
 

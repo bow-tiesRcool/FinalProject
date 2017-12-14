@@ -16,15 +16,24 @@ public class DoorTrigger : MonoBehaviour {
 			if (doorTrigger)
 			{
 				door.GetComponent<DoorController>().CanOpen();
+				StartCoroutine("Timer");
 			}
 			if (slamTrigger)
 			{
 				door.GetComponent<DoorController>().SlamAction();
+				StartCoroutine("Timer");
 			}
 			if (openTrigger)
 			{
 				door.GetComponent<DoorController>().DoorAction();
+				StartCoroutine("Timer");
 			}
 		}
+	}
+
+	IEnumerator Timer()
+	{
+		yield return new WaitForSeconds(2);
+		gameObject.SetActive(false);
 	}
 }

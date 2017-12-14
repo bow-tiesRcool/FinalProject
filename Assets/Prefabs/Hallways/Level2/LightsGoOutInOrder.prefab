@@ -11947,7 +11947,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d840c483bf5eb9c498371a5f3468e1ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitBetween: 010000000100000001000000010000000100000001000000
+  waitBetween:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   animObject:
   - {fileID: 1097471239607708}
   - {fileID: 1898719596144822}

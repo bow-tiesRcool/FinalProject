@@ -1,0 +1,5 @@
+I put objects into the rooms to make it more real. I also added a light for the
+fire and animated it so it looks good. I also fixed all the hallway lighting
+issues except for the fire light glitch.
+
+Make more Animations, and Hallways.
