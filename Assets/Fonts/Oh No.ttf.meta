@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cec91a0d04b8a5a4f873d8d234177f32
+timeCreated: 1512778987
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Oh No
+  fontNames:
+  - Oh No
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

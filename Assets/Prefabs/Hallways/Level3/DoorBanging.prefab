@@ -2851,7 +2851,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1166956262012684}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.34, y: 0, z: 0}
+  m_LocalPosition: {x: -5.796623, y: 1.7342944, z: 5.8260727}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4904022640126858}
@@ -11991,7 +11991,7 @@ MonoBehaviour:
   tryOpen: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   slamDoor: {fileID: 8300000, guid: f8d1f961fac2f9f44baf922b964d79e9, type: 3}
   close: 1
-  canOpen: 0
+  canOpen: 1
   openItself: 0
   slam: 0
 --- !u!114 &114364118235664844

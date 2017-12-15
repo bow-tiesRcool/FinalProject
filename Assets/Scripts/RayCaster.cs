@@ -27,11 +27,8 @@ public class RayCaster : MonoBehaviour
 			}
 			if (hit.collider.gameObject.tag == "Enemy")
 			{
-				Debug.Log("Hit Enemy");
-			}
-			if (hit.collider.gameObject.tag == "NextRoomDoor")
-			{
-				Debug.Log("Hit NextRoomDoor");
+				if (!hit.collider.GetComponent<JasonInFace>().pop)
+				hit.collider.GetComponent<JasonInFace>().InFace();
 			}
 		}
 	}

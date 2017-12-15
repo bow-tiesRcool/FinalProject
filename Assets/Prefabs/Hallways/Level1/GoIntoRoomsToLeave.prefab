@@ -242,7 +242,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4073257008295932}
   - component: {fileID: 65699936080941802}
-  - component: {fileID: 114999913567161902}
   m_Layer: 0
   m_Name: DoorCabinet02
   m_TagString: DoorObject
@@ -312,7 +311,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4288275924837764}
   - component: {fileID: 65128231392684262}
-  - component: {fileID: 114410208828284916}
   m_Layer: 0
   m_Name: DoorCabinet01
   m_TagString: DoorObject
@@ -704,7 +702,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4692908912854596}
   - component: {fileID: 65101008397225038}
-  - component: {fileID: 114846505527083974}
   m_Layer: 0
   m_Name: DoorCabinet02
   m_TagString: DoorObject
@@ -1044,7 +1041,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4142030230413330}
   - component: {fileID: 65551973188982648}
-  - component: {fileID: 114137779105475166}
   m_Layer: 0
   m_Name: DoorCabinet02
   m_TagString: DoorObject
@@ -1458,7 +1454,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4743522491482046}
   - component: {fileID: 65619235572198892}
-  - component: {fileID: 114509515780447574}
   m_Layer: 0
   m_Name: DoorCabinet01
   m_TagString: DoorObject
@@ -1673,7 +1668,6 @@ GameObject:
   - component: {fileID: 33732151208401916}
   - component: {fileID: 23142393414568518}
   - component: {fileID: 65670463091306776}
-  - component: {fileID: 114466118861062536}
   m_Layer: 0
   m_Name: FPH_Closet_002
   m_TagString: DoorObject
@@ -1877,7 +1871,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4234514597607296}
   - component: {fileID: 65973450547586878}
-  - component: {fileID: 114086854172849424}
   m_Layer: 0
   m_Name: DoorCabinet02
   m_TagString: DoorObject
@@ -2584,7 +2577,6 @@ GameObject:
   - component: {fileID: 33618522518649290}
   - component: {fileID: 23591002835895898}
   - component: {fileID: 65232880978432690}
-  - component: {fileID: 114147795016127074}
   m_Layer: 0
   m_Name: FPH_Closet_001
   m_TagString: DoorObject
@@ -2758,7 +2750,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4646001934201164}
   - component: {fileID: 65168735498743884}
-  - component: {fileID: 114641474397200514}
   m_Layer: 0
   m_Name: DoorCabinet01
   m_TagString: DoorObject
@@ -3430,7 +3421,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4227639002063190}
   - component: {fileID: 65118863946867594}
-  - component: {fileID: 114091589081560058}
   m_Layer: 0
   m_Name: DoorCabinet01
   m_TagString: DoorObject
@@ -14110,7 +14100,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -14510,7 +14500,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -14670,7 +14660,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 99d0b067fdf107048be07e52341b5468, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.25
   m_Pitch: 1
@@ -15753,238 +15743,6 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &114086854172849424
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1503250425958760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: 0
-  maxRot: 90
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
---- !u!114 &114091589081560058
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1970235394404062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: -90
-  maxRot: 0
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
---- !u!114 &114137779105475166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1317865198849152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: 0
-  maxRot: 90
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
---- !u!114 &114147795016127074
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710235858469836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: 0
-  maxRot: 90
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
 --- !u!114 &114185776142157602
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16030,7 +15788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1433863155627732}
-  anim: {fileID: 0}
+  anim: {fileID: 95091342545726030}
 --- !u!114 &114356432619487510
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16043,123 +15801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1196057322157660}
-  anim: {fileID: 0}
---- !u!114 &114410208828284916
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1105654225286644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: -90
-  maxRot: 0
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
---- !u!114 &114466118861062536
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1453379969409716}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: -90
-  maxRot: 0
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
+  anim: {fileID: 95953127942737582}
 --- !u!114 &114489282268880484
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16181,64 +15823,6 @@ MonoBehaviour:
   canOpen: 1
   openItself: 0
   slam: 0
---- !u!114 &114509515780447574
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1421551638547962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: -90
-  maxRot: 0
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
 --- !u!114 &114583806884403402
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16266,64 +15850,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wall: {fileID: 1111771291327666}
---- !u!114 &114641474397200514
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1777251772582188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: -90
-  maxRot: 0
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
 --- !u!114 &114649451010771268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16336,7 +15862,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1910778802667804}
-  anim: {fileID: 0}
+  anim: {fileID: 95141638706085448}
 --- !u!114 &114658611694600228
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16349,7 +15875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1557027893796314}
-  anim: {fileID: 0}
+  anim: {fileID: 95327877105986874}
 --- !u!114 &114672382378681178
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16383,7 +15909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1302365105541000}
-  anim: {fileID: 0}
+  anim: {fileID: 95031008972197106}
 --- !u!114 &114699499474505056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -16396,123 +15922,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animObject: {fileID: 1983899064303792}
-  anim: {fileID: 0}
---- !u!114 &114846505527083974
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1216647760053914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: 0
-  maxRot: 90
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
---- !u!114 &114999913567161902
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1067497151076854}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4e5bb862429f493481bb6258e300ca9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  factor: 2
-  minRot: 0
-  maxRot: 90
-  observeKind:
-  - Normal
-  - Closeup
-  observeInt: 0
-  secToOserve: 1.3
-  inGameCamera: {fileID: 0}
-  closeupCamera: {fileID: 0}
-  removeItemWhenUsed: 0
-  hasBeenUnlockedKey: 
-  canBeObserved: 0
-  lockedSound: {fileID: 0}
-  observMessage_English: 
-  observMessage_Italian: 
-  observMessage_Spanish: 
-  observMessage_German: 
-  observMessage_French: 
-  observMessage_Japanese: 
-  observMessage_Chinese: 
-  observMessage_Russian: 
-  lockedMessage_English: 
-  lockedMessage_Italian: 
-  lockedMessage_Spanish: 
-  lockedMessage_German: 
-  lockedMessage_French: 
-  lockedMessage_Japanese: 
-  lockedMessage_Chinese: 
-  lockedMessage_Russian: 
-  wrongItemMessage_English: 
-  wrongItemMessage_Italian: 
-  wrongItemMessage_Spanish: 
-  wrongItemMessage_German: 
-  wrongItemMessage_French: 
-  wrongItemMessage_Japanese: 
-  wrongItemMessage_Chinese: 
-  wrongItemMessage_Russian: 
-  doorType: 0
-  doorTypeArray:
-  - Normally Open
-  - Locked
-  - Need Equipped Object
-  - Need Activated Key
-  neededObject_Name: 
-  neededKey: 
-  openDirection: 0
+  anim: {fileID: 95727951890473446}
 --- !u!198 &198568086690300066
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -16573,7 +15983,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1955216837
+  randomSeed: -20251117
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -19854,7 +19264,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1692530396
+  randomSeed: 1220026386
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -23111,7 +22521,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -601776064
+  randomSeed: 93715356
   InitialModule:
     serializedVersion: 3
     enabled: 1

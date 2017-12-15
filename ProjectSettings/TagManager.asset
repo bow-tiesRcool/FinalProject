@@ -10,6 +10,7 @@ TagManager:
   - DoorObject
   - DoorTrigger
   - SlamTrigger
+  - Enemy
   layers:
   - Default
   - TransparentFX
