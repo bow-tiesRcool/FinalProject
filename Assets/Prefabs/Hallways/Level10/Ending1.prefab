@@ -4313,7 +4313,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1608426848705870}
-  m_LocalRotation: {x: 0.71628934, y: -0.31139717, z: 0.027708963, w: 0.6238538}
+  m_LocalRotation: {x: 0.7162894, y: -0.3113972, z: 0.027708963, w: 0.62385386}
   m_LocalPosition: {x: 0.043789014, y: -0.012560482, z: 0.02583688}
   m_LocalScale: {x: 1, y: 0.9999993, z: 1.0000007}
   m_Children:
@@ -14369,6 +14369,8 @@ MonoBehaviour:
   player: {fileID: 0}
   itemObject: {fileID: 1331239233610530}
   pop: 0
+  distFromPlayer: 0
+  meshRenderers: []
 --- !u!114 &114829767759474480
 MonoBehaviour:
   m_ObjectHideFlags: 1
