@@ -16,16 +16,13 @@ public class JasonInFace : MonoBehaviour {
 	public void InFace()
 	{
 		pop = true;
-		itemObject.transform.position = player.transform.position + Vector3.back + Vector3.down;
-        for(int i = 0; i < meshRenderers.Length; ++i)
-        {
-            meshRenderers[i].enabled = false;
-        }
+        itemObject.transform.position = (itemObject.transform.position - player.transform.position).normalized * distFromPlayer;
+        
 	}
 
     public void GetInFace()
     {
-        itemObject.transform.position = player.transform.forward.normalized * distFromPlayer;
+        itemObject.transform.position = (itemObject.transform.position - player.transform.position).normalized * distFromPlayer;
         for (int i = 0; i < meshRenderers.Length; ++i)
         {
             meshRenderers[i].enabled = true;
